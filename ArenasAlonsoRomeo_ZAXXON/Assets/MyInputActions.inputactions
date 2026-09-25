@@ -16,13 +16,13 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "MoveY",
-                    "type": "Button",
-                    "id": "3123dfa1-0066-4ab0-9b01-809872325d34",
-                    "expectedControlType": "",
+                    "name": "rotation",
+                    "type": "Value",
+                    "id": "29b05347-1d65-4971-8765-36d4c1d0ae28",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -39,12 +39,23 @@
                 },
                 {
                     "name": "",
-                    "id": "d71a956b-2ac1-46cc-bf5e-72ba202a4450",
-                    "path": "<iOSGameController>/rightStick/up",
+                    "id": "5f381108-c306-4fc1-a6ca-df6e8c7a9beb",
+                    "path": "<Gamepad>/rightStick/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MoveY",
+                    "action": "rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "381a244f-23ac-4386-b78c-0fd1cf9ddcb0",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "rotation",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
