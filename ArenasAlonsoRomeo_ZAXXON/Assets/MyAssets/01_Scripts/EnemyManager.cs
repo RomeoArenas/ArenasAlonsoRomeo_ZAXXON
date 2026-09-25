@@ -4,12 +4,13 @@ public class EnemyManager : MonoBehaviour
 {
     float speed;
 
-   [SerializeField] PlayerManager playerManager;
+    PlayerManager playerManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        GameObject playerGO = GameObject.FindGameObjectWithTag("Player"); 
+        playerManager = playerGO.GetComponent<PlayerManager>();
     }
 
     // Update is called once per frame
