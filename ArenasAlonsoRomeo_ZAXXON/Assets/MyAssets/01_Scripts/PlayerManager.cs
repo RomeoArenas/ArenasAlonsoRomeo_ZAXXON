@@ -30,13 +30,14 @@ public class PlayerManager : MonoBehaviour
         inputActions.Player.Rotar.performed += ctx => rotation = ctx.ReadValue<float>();
         inputActions.Player.Rotar.canceled += _ => rotation = 0f;
 
+        moveSpeed = 30f;
 
     }
 
     private void Start()
     {
-        moveSpeed = 30f;
-        desplSpeed = 5f;
+       
+        desplSpeed = 25f;
 
     }
     private void Update()
