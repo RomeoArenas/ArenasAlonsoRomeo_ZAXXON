@@ -280,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9bc369e5c278e349bc862704bcdc509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
+  alive: 1
   moveSpeed: 30
   desplSpeed: 25
 --- !u!4 &507685823 stripped
@@ -570,6 +571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf89cbed902ced468076a50b02ffab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
+  enemy: {fileID: 0}
 --- !u!1001 &5016371364151687439
 PrefabInstance:
   m_ObjectHideFlags: 0

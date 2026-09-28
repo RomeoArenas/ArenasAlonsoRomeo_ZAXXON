@@ -16,9 +16,9 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "rotation",
+                    "name": "MoveY",
                     "type": "Value",
-                    "id": "29b05347-1d65-4971-8765-36d4c1d0ae28",
+                    "id": "a7e1e1ab-684c-4eca-bce8-8b6d9eb4410b",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
@@ -39,23 +39,12 @@
                 },
                 {
                     "name": "",
-                    "id": "5f381108-c306-4fc1-a6ca-df6e8c7a9beb",
-                    "path": "<Gamepad>/rightStick/x",
+                    "id": "0ee85f3d-7a11-49f3-921c-0af2b9574bc2",
+                    "path": "<Gamepad>/leftStick/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "rotation",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "381a244f-23ac-4386-b78c-0fd1cf9ddcb0",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "rotation",
+                    "action": "MoveY",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
