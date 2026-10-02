@@ -14,6 +14,11 @@ public class PlayerManager : MonoBehaviour
     float moveX;
     float moveY;
 
+    public float minY = 20f;
+    public float maxY = 40f;
+    public float minX = -60f;
+    public float maxX = 50f;
+
 
     //RS para la rotación
     float rotation;
@@ -70,8 +75,12 @@ public class PlayerManager : MonoBehaviour
 
         }
 
-        Vector3 desplY = Vector3.up * desplSpeed * Time.deltaTime * moveY;
-        transform.Translate(desplY, Space.World);
+        if (CheckLimitsY() == true)
+        {
+            Vector3 desplY = Vector3.up * desplSpeed * Time.deltaTime * moveY;
+            transform.Translate(desplY, Space.World);
+
+        }
     }
 
     void RotatePlayer()
@@ -92,8 +101,39 @@ public class PlayerManager : MonoBehaviour
     {
         bool inLimit = true;
 
+       if (currentRot != Vector3.zero) {
+            if (transform.position.x < minX && moveX < 0f)
+            {
+                inLimit = false;
+            }
+            else if (transform.position.x > maxX && moveX > 0f)
+            {
+                inLimit = false;
+            }
+        }
+
         return inLimit;
     }
+
+    bool CheckLimitsY()
+    {
+        bool inLimit = true;
+
+        if (currentRot != Vector3.zero)
+        {
+            if (transform.position.y < minY && moveY < 0f)
+            {
+                inLimit = false;
+            }
+            else if (transform.position.y > maxY && moveY > 0f)
+            {
+                inLimit = false;
+            }
+        }
+
+        return inLimit;
+    }
+
 
     void Shoot()
     {

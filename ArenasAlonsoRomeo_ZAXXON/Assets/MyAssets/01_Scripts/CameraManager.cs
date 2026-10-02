@@ -11,8 +11,8 @@ public class CameraManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        offsetZ = -40f;
-        offsetY = 9f;
+        offsetZ = -25f;
+        offsetY = 6f;
     }
 
     // Update is called once per frame

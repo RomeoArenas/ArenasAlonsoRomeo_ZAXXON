@@ -155,7 +155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1987845962818111139}
-  - component: {fileID: 6793757363282255770}
+  - component: {fileID: 6426201580971251388}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -179,7 +179,7 @@ Transform:
   - {fileID: 3602611462281468771}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6793757363282255770
+--- !u!114 &6426201580971251388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,3 +191,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f7a3c2886c12b42b041c4268de4a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyManager
+  mySpeed: 40

@@ -53,8 +53,9 @@ public class Spawner : MonoBehaviour
     void SacarEnemigo(float offsetZ)
     {
         float posX = Random.Range(-100f, 100f);
-        float posY = Random.Range(1f, 30f);
+        float posY = Random.Range(5f, 50f);
         Vector3 pos = new Vector3(posX, posY, transform.position.z - offsetZ);
+        //int randomKey = Random.Range(0, enemies.Length);    
         Instantiate(enemy, pos, Quaternion.identity);
     }
 }

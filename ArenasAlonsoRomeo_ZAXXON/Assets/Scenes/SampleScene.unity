@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f7a3c2886c12b42b041c4268de4a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyManager
+  mySpeed: 40
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +284,7 @@ MonoBehaviour:
   alive: 1
   moveSpeed: 30
   desplSpeed: 25
+  smoothTime: 0.3
 --- !u!4 &507685823 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4c5764a9590a56d46b1a8e90f9c19f35, type: 3}
@@ -571,7 +573,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf89cbed902ced468076a50b02ffab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
-  enemy: {fileID: 0}
+  enemy: {fileID: 165315593}
+  firstEenemyPositionZ: 200
+  distanciaEntreEnemigos: 10
+  playerManager: {fileID: 507685820}
 --- !u!1001 &5016371364151687439
 PrefabInstance:
   m_ObjectHideFlags: 0
