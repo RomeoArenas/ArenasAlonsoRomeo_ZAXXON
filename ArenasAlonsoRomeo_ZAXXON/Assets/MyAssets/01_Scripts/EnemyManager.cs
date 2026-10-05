@@ -21,7 +21,7 @@ public class EnemyManager : MonoBehaviour
         speed = playerManager.moveSpeed + mySpeed;
         transform.Translate(Vector3.back * Time.deltaTime * speed);
 
-        if (transform.position.z < -600f)
+        if (transform.position.z < -500f)
         {
             Destroy(gameObject);
         }
